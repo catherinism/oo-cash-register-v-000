@@ -30,9 +30,7 @@ else self.total = self.total - (self.total * @discount/100)
 end
 end
 
-def items
-  @items
-end
+
 
 end
 
