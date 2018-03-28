@@ -30,8 +30,13 @@ else self.total = self.total - (self.total * @discount/100)
 end
 end
 
+def items
+  @items
+end
 
+def void_last_transaction
 
+end
 end
 
 #Add items of varying quantities and prices
