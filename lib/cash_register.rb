@@ -16,11 +16,10 @@ def total
   @total
 end
 
-def add_item(item, price, quantity=1)
-    @transaction = {item: item, price: price, quantity: quantity}
-    @total += price * quantity
-    @transaction[:quantity].times do
-      @items << item
+def add_item(item, price, quantity = 1)
+  self.total += price * quantity
+  @items << item
+end
 
 def apply_discount
   if self.total == 0
